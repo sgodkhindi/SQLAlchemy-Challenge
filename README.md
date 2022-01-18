@@ -2,6 +2,7 @@
 
 ## Deliverables:
 
+## Step 1 - Climate Analysis and Exploration
 ### Jupyter Notebook - Climate Analysis and Exploration
 [Main Jupyter Notebook for Climate Analysis](climate.ipynb)
 
@@ -10,34 +11,13 @@
 
 ![Temprature_Histogram](Images/Temp_Analysis.png)
 
-
-### Before You Begin
-
-1. Create a new repository for this project called `sqlalchemy-challenge`. **Do not add this homework to an existing repository**.
-
-2. Clone the new repository to your computer.
-
-3. Add your Jupyter notebook and `app.py` to this folder. These will be the main scripts to run for analysis.
-
-4. Push the above changes to GitHub or GitLab.
-
-![surfs-up.png](Images/surfs-up.png)
-
-Congratulations! You've decided to treat yourself to a long holiday vacation in Honolulu, Hawaii! To help with your trip planning, you need to do some climate analysis on the area. The following outlines what you need to do.
+## Step 2 - Climate App
+### Flask Application
+[Flask Application - app.py](app.py)
 
 ## Step 1 - Climate Analysis and Exploration
 
-To begin, use Python and SQLAlchemy to do basic climate analysis and data exploration of your climate database. All of the following analysis should be completed using SQLAlchemy ORM queries, Pandas, and Matplotlib.
-
-* Use the provided [starter notebook](climate_starter.ipynb) and [hawaii.sqlite](Resources/hawaii.sqlite) files to complete your climate analysis and data exploration.
-
-* Use SQLAlchemy `create_engine` to connect to your sqlite database.
-
-* Use SQLAlchemy `automap_base()` to reflect your tables into classes and save a reference to those classes called `Station` and `Measurement`.
-
-* Link Python to the database by creating an SQLAlchemy session.
-
-* **Important** Don't forget to close out your session at the end of your notebook.
+To achieve this I used [hawaii.sqlite](Resources/hawaii.sqlite) and using SQLAlchemy, Pandas, Matplotlib and Numpy wrote my code in the [Jupyter Notebook for Climate Analysis](climate.ipynb)
 
 ### Precipitation Analysis
 
@@ -89,13 +69,19 @@ To begin, use Python and SQLAlchemy to do basic climate analysis and data explor
 
 ## Step 2 - Climate App
 
-### Did Not Attempt 
+The part was achieved by creating a [Flask Application](app.py) based on the queries in Step 1 (Jupyter Notebook).
 
+### Routes
 
-## Bonus: Other Recommended Analyses
+* `/` Home page -  List all routes that are available.
 
-### Did Not Attempt 
+* `/api/v1.0/precipitation` - JSON representation of the Precipitation dictionary.
 
+* `/api/v1.0/stations` -  JSON list of stations from the dataset.
 
+* `/api/v1.0/tobs` - JSON list of temperature observations (TOBS) for the previous year.
 
+* `/api/v1.0/<start>` - JSON list of the minimum temperature, the average temperature, and the max temperature for all dates greater than or equal to the Start Date.
+
+* `/api/v1.0/<start>/<end>` - JSON list of the minimum temperature, the average temperature, and the max temperature between a given Start Date and End Date range.
 
