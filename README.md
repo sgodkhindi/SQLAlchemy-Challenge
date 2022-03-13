@@ -1,4 +1,4 @@
-# SQLAlchemy Homework - Surfs Up!
+# SQLAlchemy Challeng - Surfs Up!
 
 ## Deliverables:
 
