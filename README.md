@@ -1,4 +1,4 @@
-# SQLAlchemy Challeng - Surfs Up!
+# SQLAlchemy Challenge - Surfs Up!
 
 ## Deliverables:
 
